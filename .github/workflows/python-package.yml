@@ -1,3 +1,4 @@
+Задаине 1
 purchases = int (input("Введите количество покупок >>>"))
 
 if purchases <= 5:
@@ -13,13 +14,14 @@ m = 60
 s = 3600
 f"{h}:{m}^{s}".format(h, m, s)
 
-
+Задаине 2
 time = int(input("Введите время в секндах"))
 h = time // 3600
 m = (time - h * 3600) // 60
 s = time - (h * 3600 + m * 60)
 print(f"Время в формате чч:мм:сс {h} : {m} : {s}")
 
+Задаине 3
 n = int(input("Введите число n: "))
 temp = str(n)
 t1 = temp + temp
@@ -27,7 +29,7 @@ t2 = temp + temp + temp
 comp = n + int(t1) + int(t2)
 print("Результат равен:", comp)
 
-
+Задаине 4
 number = abs( int(input("введите целое положительное число")))
 max = number % 10
 while number >= 1:
@@ -39,7 +41,7 @@ while number >= 1:
     else:
         print("Самая большая цифра в числе", max)
         
-        
+Задаине 5        
 profit = float(input("Введите выручку фирмы "))
 costs = float(input("Введите издержки фирмы "))
 if profit > costs:
@@ -51,3 +53,14 @@ elif profit == costs:
 else:
     print("Фирма работает в убыток")
         break
+
+Задаине 6
+a = int(input("Введите результаты пробежки первого дня"))
+b = int(input("Желаемый результат в км"))
+days = 1
+km = a
+while km < b:
+    a = a + 0.1 * a
+    days += 1
+    km = km + a
+    print(f"Достижение требуемых показателей на % d" % days)
