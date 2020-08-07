@@ -8,13 +8,12 @@ if purchases >= 25:
 else:
     print("Можно заказать")
     
-    
+Задаине 2   
 h = 1
 m = 60
 s = 3600
 f"{h}:{m}^{s}".format(h, m, s)
 
-Задаине 2
 time = int(input("Введите время в секндах"))
 h = time // 3600
 m = (time - h * 3600) // 60
