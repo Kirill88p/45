@@ -42,6 +42,22 @@ if number <= 12 and number >= 1:
     print(f"Month from dict is {month_dict[number]}")
 else:
     print("Ошибка")
+user_enter = int(input("[Список] Введите месяц числом от 1 до 12: "))
+winter_list = [12, 1, 2]
+spring_list = [3, 4, 5]
+summer_list = [6, 7, 8]
+autumn_list = [9, 10, 11]
+
+if user_enter in winter_list:
+    print("Зима")
+elif user_enter in spring_list:
+    print("Весна")
+elif user_enter in spring_list:
+    print("Лето")
+elif user_enter in autumn_list:
+    print("Осень")
+else:
+    print("В году 12 месяцев, введите число от 1 до 12")
 
 
 Задание 4
